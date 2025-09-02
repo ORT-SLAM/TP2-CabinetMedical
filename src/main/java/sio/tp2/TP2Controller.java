@@ -68,10 +68,14 @@ public class TP2Controller implements Initializable {
 
         monPlanning.get(dateKey).put(heureRdv, rendezVous);
 
+        clearForm();
+        updateTreeView();
+    }
+
+    private void clearForm() {
         txtNomPatient.clear();
         cboNomPathologie.getSelectionModel().selectFirst();
         dpDateRdv.setValue(null);
-        updateTreeView();
     }
 
     private void updateTreeView() {
