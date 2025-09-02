@@ -12,9 +12,7 @@ import java.util.ResourceBundle;
 import java.util.TreeMap;
 
 public class TP2Controller implements Initializable {
-
     private TreeMap<String, TreeMap<String, RendezVous>> monPlanning;
-
     @FXML
     private TextField txtNomPatient;
     @FXML
